@@ -1,5 +1,6 @@
 package com.casper.quizapp
 
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
@@ -25,6 +26,7 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener{
     var tvOption3 : TextView? = null
     var tvOption4 : TextView? = null
     private var btnSubmit : Button? = null
+    private  var mUserName : String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,6 +41,8 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener{
         tvOption3 = findViewById(R.id.tvOption3)
         tvOption4 = findViewById(R.id.tvOption4)
         btnSubmit = findViewById(R.id.btnSubmit)
+
+        mUserName = intent.getStringExtra(Constants.USER_NAME)
 
         mQuestionsList = Constants.getQuestions()
 
@@ -112,7 +116,12 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener{
                         mCurrentPosition <= mQuestionsList!!.size -> {
                             setQuestions()
                         }else -> {
-                            Toast.makeText(this,"Finish", Toast.LENGTH_SHORT).show()
+                            val intent = Intent(this, ResultActivity::class.java)
+                            intent.putExtra(Constants.USER_NAME, mUserName)
+                            intent.putExtra(Constants.CORRECT_ANSWER, mCorrectAnswers)
+                            intent.putExtra(Constants.TOTAL_QUESTIONS, mQuestionsList!!.size)
+                            startActivity(intent)
+                            finish()
                         }
                     }
                 }else{

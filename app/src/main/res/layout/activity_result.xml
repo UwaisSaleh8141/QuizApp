@@ -23,11 +23,10 @@
 
     <ImageView
         android:id="@+id/ivTrophy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="351dp"
+        android:layout_height="403dp"
         android:contentDescription="image"
-        android:src="@drawable/ic_trophy">
-    </ImageView>
+        android:src="@drawable/ic_trophy"></ImageView>
 
     <TextView
         android:id="@+id/tvCongrats"
@@ -73,13 +72,5 @@
         android:textStyle="bold"
         android:textColor="@color/white">
     </Button>
-
-
-
-
-
-
-
-
 
 </LinearLayout>

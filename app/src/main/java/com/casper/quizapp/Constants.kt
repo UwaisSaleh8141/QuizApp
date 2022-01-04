@@ -2,6 +2,11 @@ package com.casper.quizapp
 
 object Constants{
 
+    const val USER_NAME : String = "user_name"
+    const val TOTAL_QUESTIONS : String = "total_question"
+    const val CORRECT_ANSWER : String = "correct_answers"
+
+
     fun getQuestions() : ArrayList<Questions>{
         val questionsList = ArrayList<Questions>()
 
