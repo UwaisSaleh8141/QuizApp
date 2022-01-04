@@ -8,7 +8,7 @@ object Constants{
         val q1 = Questions(
             1,
             "What does this road sign mean?",
-            R.drawable.ic_bg,
+            R.drawable.g1_1,
             "Left turns prohibited.",
             "Right turns prohibited.",
             "U-turns prohibited.",
@@ -20,7 +20,7 @@ object Constants{
         val q2 = Questions(
             2,
             "What does this road sign mean?",
-            R.drawable.ic_bg,
+            R.drawable.g1_2,
             "You may not park in the designated area during the posted times.",
             "No parking at any time.",
             "You may park in the designated area during the posted times.",
@@ -32,7 +32,7 @@ object Constants{
         val q3 = Questions(
             3,
             "What does this road sign mean?",
-            R.drawable.ic_bg,
+            R.drawable.g1_3,
             "There is a stop sign ahead.",
             "There is someone directing traffic ahead.",
             "There are no traffic signals on this road.",
@@ -44,7 +44,7 @@ object Constants{
         val q4 = Questions(
             4,
             "What does this road sign mean?",
-            R.drawable.ic_bg,
+            R.drawable.g1_4,
             "Watch for traffic signals.",
             "Do not slow down.",
             "Do not block the intersection",
@@ -56,7 +56,7 @@ object Constants{
         val q5 = Questions(
             5,
             "What does this sign mean?",
-            R.drawable.ic_bg,
+            R.drawable.g1_5,
             "Keep a certain distance away.",
             "This lane is closed ahead; merge into another lane.",
             "Follow these signs until you return to your regular route.",
