@@ -71,6 +71,68 @@ object Constants{
         questionsList.add(q5)
 
 
+        //NEW
+
+        val q6 = Questions(
+            6,
+            "What does this sign mean?",
+            R.drawable.g1_6,
+            "No stopping",
+            "No parking.",
+            "Bicycles allowed on this road.",
+            "No bicycles allowed on this road .",
+            4)
+
+        questionsList.add(q6)
+
+        val q7 = Questions(
+            7,
+            "What does this road sign mean?",
+            R.drawable.g1_7,
+            "Moveable bridge ahead.",
+            "Narrow road ahead.",
+            "Hotel.",
+            "Airport.",
+            1)
+
+        questionsList.add(q7)
+
+        val q8 = Questions(
+            8,
+            "What does this road sign mean?",
+            R.drawable.g1_8,
+            "No stopping.",
+            "No trucks.",
+            "No parking.",
+            "No passing.",
+            4)
+
+        questionsList.add(q8)
+
+        val q9 = Questions(
+            9,
+            "What does this sign mean?",
+            R.drawable.g1_9,
+            "An emergency vehicle.",
+            "A fast moving vehicle.",
+            "A vehicle carrying dangerous goods.",
+            "A slow moving vehicle.",
+            4)
+
+        questionsList.add(q9)
+
+        val q10 = Questions(
+            10,
+            "What does this road sign mean?",
+            R.drawable.g1_10,
+            "Airplanes land on this road.",
+            "This is a route to an airport.",
+            "Airplanes fly low overhead.",
+            "This is landing area for helicopters.",
+            2)
+
+        questionsList.add(q10)
+
 
 
         return questionsList
